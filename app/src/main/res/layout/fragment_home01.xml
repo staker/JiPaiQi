@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/appColorBackground">
+
+    <include layout="@layout/layout_title"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/nestedScrollViewStyle">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dip"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_centerVertical="true"
+                    android:textSize="16dip"
+                    android:text="1.刷视频"
+                    android:textColor="#000000"/>
+
+
+
+                <Button
+                    android:id="@+id/btn_setting01"
+                    android:layout_width="60dip"
+                    android:layout_height="30dip"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:text="设置"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:foreground="@drawable/selector_foreground_5"
+                    android:layout_toLeftOf="@+id/btn_start01"
+                    android:background="@drawable/shape_blue01_3"
+                    />
+
+
+                <Button
+                    android:id="@+id/btn_start01"
+                    android:layout_width="60dip"
+                    android:layout_height="30dip"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:text="启动"
+                    android:foreground="@drawable/selector_foreground_5"
+                    android:background="@drawable/shape_blue01_3"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dip"
+                android:background="#44000000"/>
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/btn_stop"
+                android:layout_width="match_parent"
+                android:layout_height="52dip"
+                android:textColor="#ffffff"
+                android:layout_marginTop="100dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:textSize="18dip"
+                android:text="停止脚本"
+                android:foreground="@drawable/selector_foreground_5"
+                android:background="@drawable/shape_red01_3"
+                />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--这是一个通用的顶部导航栏布局，左边是图片加文字   中间是title文字   右边是标题加问题   通过显示隐藏 和更换图片的方式来适应各种界面导航-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="@color/appColorMain">
+        <!--如果这里写的高度没有用，那么下面的布局就要重新再包装一个RelativeLayout，并设置高度为50dip-->
+        <ImageView
+            android:id="@+id/img_left"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_color_nav_bg"
+            android:clickable="true"
+            android:padding="16dip"
+            />
+        <TextView
+            android:id="@+id/txt_left"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="#ffffff"
+            android:background="@drawable/selector_color_nav_bg"
+            android:textSize="16sp"
+            android:paddingRight="8dip"
+            android:paddingLeft="8dip"
+            android:visibility="gone"/>
+
+
+
+
+
+
+
+
+
+
+        <ImageView
+            android:id="@+id/img_right"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_color_nav_bg"
+            android:clickable="true"
+            android:padding="15dip"
+            android:visibility="gone" >
+        </ImageView>
+        <TextView
+            android:id="@+id/txt_right"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:paddingRight="8dip"
+            android:paddingLeft="8dip"
+            android:clickable="true"
+            android:textColor="#ffffff"
+            android:background="@drawable/selector_color_nav_bg"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="80dip"
+            android:layout_marginRight="80dip"
+            android:ellipsize="end"
+            android:textSize="18sp"
+            android:maxLines="2"
+            android:text="标题"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/view_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dip"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            />
+</RelativeLayout>

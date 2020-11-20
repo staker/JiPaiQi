@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- 点击状态下的效果 -->
+	<item android:state_pressed="true">
+		<shape>
+			<!-- 设置背景填充色为黑色 -->
+			<solid android:color="#e5e6e8" />
+			<!-- 设置边框宽度为1dip，边框颜色为白色 -->
+			<stroke android:width="0dip" android:color="#e5e6e8" />
+			<!-- 设置按钮圆角半径为5dip -->
+			
+			<padding android:bottom="1dip" android:left="1dip"
+				android:right="1dip" android:top="1dip" />
+		</shape>
+	</item>
+	<!-- 正常状态下(非点击)的效果 -->
+	<item android:state_pressed="false">
+		<shape>
+			<!-- 设置背景填充色为白色 -->
+			<solid android:color="#00ffffff" />
+			<!-- 设置边框宽度为1dip，边框颜色为黑色 -->
+			<stroke android:width="0dip" android:color="#00ffffff" />
+			<!-- 设置按钮圆角半径为5dip -->
+			<!-- 设置按钮中间文字距上下左右都为10dip的间距 -->
+			<padding android:bottom="1dip" android:left="1dip"
+				android:right="1dip" android:top="1dip" />
+		</shape>
+	</item>
+<!-- http://blog.csdn.net/drift_away/article/details/8178459 -->
+</selector>

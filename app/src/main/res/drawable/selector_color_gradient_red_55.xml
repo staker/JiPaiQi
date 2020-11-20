@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 点击状态下的效果   带有渐变色-->
+    <item android:state_pressed="true"><shape>
+
+        <corners android:radius="55dip" />
+        <gradient
+            android:startColor="#b20919"
+            android:centerColor="#b20919"
+            android:endColor="#df3636"
+            android:useLevel="true"
+            android:angle="180"
+            android:type="linear"
+            android:centerX="0"
+            android:centerY="0"
+            android:gradientRadius="90"/>
+        </shape></item>
+    <!-- 正常状态下(非点击)的效果 -->
+    <item android:state_pressed="false"><shape>
+        <corners android:radius="55dip" />
+        <gradient
+            android:startColor="#ff0d24"
+            android:centerColor="#ff0d24"
+            android:endColor="#ff4e4e"
+            android:useLevel="true"
+            android:angle="180"
+            android:type="linear"
+            android:centerX="0"
+            android:centerY="0"
+            android:gradientRadius="90"/>
+        </shape></item>
+    <!-- http://blog.csdn.net/drift_away/article/details/8178459 -->
+
+</selector>

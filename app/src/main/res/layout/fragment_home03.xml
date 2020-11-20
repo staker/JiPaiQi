@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/appColorBackground">
+
+    <include layout="@layout/layout_title"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/nestedScrollViewStyle">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginTop="20dip"
+        android:text="支持功能定制，不收取任何额外费用。请加QQ 1226828594"
+        android:textSize="17sp"
+        android:layout_marginLeft="20dip"
+        />
+
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="#000000"-->
+                <!--android:layout_marginTop="20dip"-->
+                <!--android:text="2.刷视频关注用户并私信\n(1)设置1至3条聊天话术语\n(2)设置关注多少用户以后开始私信\n"-->
+                <!--android:textSize="17sp"-->
+                <!--android:layout_marginLeft="20dip"-->
+                <!--/>-->
+
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="#000000"-->
+                <!--android:layout_marginTop="20dip"-->
+                <!--android:text="3.刷视频并点赞私信给评论视频的人\n(1)设置1至3条聊天话术语\n(2)点赞并私信最新评论用户"-->
+                <!--android:textSize="17sp"-->
+                <!--android:layout_marginLeft="20dip"-->
+                <!--/>-->
+
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="#000000"-->
+                <!--android:layout_marginTop="20dip"-->
+                <!--android:text="4.设置私信和评论的对象性别\n(1)设置男性、女性、不限制三种"-->
+                <!--android:textSize="17sp"-->
+                <!--android:layout_marginLeft="20dip"-->
+                <!--/>-->
+
+
+</LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>

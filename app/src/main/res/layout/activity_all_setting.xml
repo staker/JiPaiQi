@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/appColorBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/nestedScrollViewStyle">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="30dip">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:text="通用设置适用于所有的脚本模型"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ff0000"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+
+
+
+
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="1.单个视频最长观看时长(秒)："
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edt_watch_time"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:inputType="number"
+            android:hint="多少秒"
+            android:paddingLeft="4dip"
+            android:paddingTop="4dip"
+            android:paddingBottom="4dip"
+            android:singleLine="true" />
+    </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:layout_marginLeft="20dip"
+                android:text="例如：设置10，则单个视频的观看时间在2秒到10秒之间的一个随机时间"
+                android:textColor="#66000000"
+                android:textSize="15sp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="2.视频点赞概率多少分之一："
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edt_zan_probability"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:inputType="number"
+                    android:hint="概率数"
+                    android:paddingLeft="4dip"
+                    android:paddingTop="4dip"
+                    android:paddingBottom="4dip"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:layout_marginLeft="20dip"
+                android:text="例如：设置10，则平均10个视频里面会有一个点赞，设置1为百分百点赞,设置0为关闭点赞功能"
+                android:textColor="#66000000"
+                android:textSize="15sp" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="3.热评点赞概率多少分之一："
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edt_hot_comment_zan_probability"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:inputType="number"
+                    android:hint="概率数"
+                    android:paddingLeft="4dip"
+                    android:paddingTop="4dip"
+                    android:paddingBottom="4dip"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:layout_marginLeft="20dip"
+                android:text="注：概率规则同上"
+                android:textColor="#66000000"
+                android:textSize="15sp" />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="4.普通评论点赞概率多少分之一："
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edt_normal_comment_zan_probability"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:inputType="number"
+                    android:hint="概率数"
+                    android:paddingLeft="4dip"
+                    android:paddingTop="4dip"
+                    android:paddingBottom="4dip"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:layout_marginLeft="20dip"
+                android:text="注：\n1.概率规则同上 \n2.只有需要去关注或去私信的用户才会点赞他的评论"
+                android:textColor="#66000000"
+                android:textSize="15sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="3.延迟关注时间（秒）："
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edt_delay_follow"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:hint="时间"
+                    android:inputType="number"
+                    android:paddingLeft="4dip"
+                    android:paddingTop="4dip"
+                    android:paddingBottom="4dip"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="6dip"
+                android:text="例如：设置6，则进入用户界面之后延迟6秒再关注"
+                android:textColor="#66000000"
+                android:textSize="15sp" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:layout_marginLeft="20dip"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.评论内容："
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+                <EditText
+                    android:id="@+id/edt_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="20dip"
+                    android:text="这个视频拍的真好玩！"
+                    android:textSize="15sp"
+                    android:paddingLeft="4dip"
+                    android:paddingTop="4dip"
+                    android:paddingBottom="4dip"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_comment_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:layout_marginLeft="20dip"
+                android:text="注：\n1.可以设置多条评论内容，中间用 @ 符号分开\n2.如果设置多条评论内容会随机选择其中一条"
+                android:textColor="#66000000"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6.私信内容："
+                android:textColor="#000000"
+                android:layout_marginLeft="20dip"
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:layout_marginLeft="20dip"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="私信话术语一"
+                    android:textColor="#aa000000"
+                    android:textSize="16sp" />
+                <EditText
+                    android:id="@+id/edt_letter01"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="20dip"
+                    android:text="你好啊，可以交个朋友吗？"
+                    android:textSize="15sp"
+                    android:paddingLeft="4dip"
+                    android:paddingTop="4dip"
+                    android:paddingBottom="4dip"
+                    android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:layout_marginLeft="20dip"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="私信话术语二"
+                    android:textColor="#aa000000"
+                    android:textSize="16sp" />
+                <EditText
+                    android:id="@+id/edt_letter02"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="20dip"
+                    android:text="我很喜欢你拍的视频"
+                    android:textSize="15sp"
+                    android:paddingLeft="4dip"
+                    android:paddingTop="4dip"
+                    android:paddingBottom="4dip"
+                    android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:layout_marginLeft="20dip"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="私信话术语三"
+                    android:textColor="#aa000000"
+                    android:textSize="16sp" />
+                <EditText
+                    android:id="@+id/edt_letter03"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="20dip"
+                    android:text="这是我的微信"
+                    android:textSize="15sp"
+                    android:paddingLeft="4dip"
+                    android:paddingTop="4dip"
+                    android:paddingBottom="4dip"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_letter_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:layout_marginLeft="20dip"
+                android:text="注：\n1.每一条话术语可以设置多条话术内容，中间用 @ 符号分开\n2.如在话术语一当中设置多条话术语会随机选择其中一条使用"
+                android:textColor="#66000000"
+                android:textSize="15sp" />
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="20dip"
+                android:text="7.性别选择："
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_sex_nan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dip"
+                    android:text="男"
+                    android:textColor="#aa000000"
+                    android:textSize="18sp" />
+
+                <com.staker.main.view.SmoothCheckBox
+                    android:id="@+id/switch_nan"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/txt_sex_nv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dip"
+                    android:text="女"
+                    android:textColor="#aa000000"
+                    android:textSize="18sp" />
+
+                <com.staker.main.view.SmoothCheckBox
+                    android:id="@+id/switch_nv"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_gravity="center_vertical" />
+
+
+                <TextView
+                    android:id="@+id/txt_sex_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dip"
+                    android:text="不限制"
+                    android:textColor="#aa000000"
+                    android:textSize="18sp" />
+
+                <com.staker.main.view.SmoothCheckBox
+                    android:id="@+id/switch_all"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="50dip"
+        android:layout_marginRight="20dip"
+        android:text="保存设置"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

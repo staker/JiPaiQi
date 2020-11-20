@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/appColorBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/nestedScrollViewStyle">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="1.刷多少个视频之后停止脚本："
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edt_see_count"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:inputType="number"
+                    android:hint="视频数"
+                    android:paddingLeft="4dip"
+                    android:paddingTop="4dip"
+                    android:paddingBottom="4dip"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="10dip">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:text="2.是否开启评论"
+                    android:textColor="#000000"/>
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/switch_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    app:sb_checked_color="#00ddff"
+                    app:sb_show_indicator="false"
+                    app:sb_checked="true"
+                    app:sb_effect_duration="150"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/txt_comment_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:layout_marginLeft="20dip"
+                android:text="1.视频点赞功能默认开启，可在全局设置里面设置点赞的概率\n2.只有点过赞的视频才有一半概率被评论"
+                android:textColor="#66000000"
+                android:textSize="14sp" />
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="50dip"
+        android:layout_marginRight="20dip"
+        android:text="保存设置"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

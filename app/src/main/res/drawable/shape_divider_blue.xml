@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    >
+        <!--这是专门做给RecyclerView使用的矩形分割线-->
+        <!--gradient属性是设置图形的渐变色-->
+        <gradient
+            android:centerColor="#0000ff"
+            android:endColor="#0000ff"
+            android:startColor="#0000ff"
+            android:type="linear" />
+        <size android:height="0.7dip"/>  <!--定义矩形的边框高度-->
+
+</shape>

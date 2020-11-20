@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--这是一个通用的顶部导航栏布局，左边是图片加文字   中间是title文字   右边是标题加问题   通过显示隐藏 和更换图片的方式来适应各种界面导航-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_relative_layout"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="200px">
+
+
+        <Button
+            android:id="@+id/btn_count"
+            android:layout_width="150px"
+            android:layout_height="200px"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:text="牌张:0"
+            android:foreground="@drawable/selector_foreground_5"
+            android:background="@drawable/shape_blue01_3"
+            android:layout_gravity="center_vertical"
+            />
+
+
+        <LinearLayout
+            android:layout_width="150px"
+            android:layout_height="200px"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dip">
+
+                <Button
+                    android:id="@+id/btn_reset"
+                    android:layout_width="150px"
+                    android:layout_height="90px"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:text="重置"
+                    android:foreground="@drawable/selector_foreground_5"
+                    android:background="@drawable/shape_blue01_3"
+                    />
+
+
+                <Button
+                    android:id="@+id/btn_back"
+                    android:layout_width="150px"
+                    android:layout_height="90px"
+                    android:layout_marginTop="20px"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:text="回撤"
+                    android:foreground="@drawable/selector_foreground_5"
+                    android:background="@drawable/shape_blue01_3"
+                    />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_wrap"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:layout_marginLeft="10px"
+            android:orientation="horizontal"></LinearLayout>
+
+</LinearLayout>
